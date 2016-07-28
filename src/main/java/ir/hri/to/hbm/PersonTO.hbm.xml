@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ir.hri.to.PersonTO" table="PERSON">
+        <id name="id" type="int">
+            <column name="ID" sql-type="INTEGER"></column>
+            <generator class="increment"/>
+        </id>
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRST_NAME" sql-type="VARCHAR(30)" not-null="true"/>
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LAST_NAME" sql-type="VARCHAR(30)" not-null="true"/>
+        </property>
+        <list name="personContactTO" cascade="all">
+            <key column="PERSON_FK"></key>
+            <index column="ROW"></index>
+            <one-to-many class="ir.hri.to.PersonContactTO"/>
+        </list>
+    </class>
+</hibernate-mapping>

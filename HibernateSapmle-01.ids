@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - test@localhost" uuid="63df46b8-24e1-4662-957e-ed392ebf48e6">
+    <database-info product="MySQL" version="5.0.45-community-nt" jdbc-version="3.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.0.4 ( $Date: 2006-10-19 17:47:48 +0200 (Thu, 19 Oct 2006) $, $Revision: 5908 $ )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="test"/>
+    <table name="data" schema="" catalog="test" type="TABLE">
+      <column name="date" sqlType="varchar" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="value" sqlType="int unsigned" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="date"/>
+    </table>
+    <table name="my_cities" schema="" catalog="test" type="TABLE">
+      <column name="code" sqlType="int unsigned" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="varchar" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="msts" sqlType="int unsigned" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="code"/>
+    </table>
+    <table name="my_states" schema="" catalog="test" type="TABLE">
+      <column name="code" sqlType="int unsigned" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="varchar" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="code"/>
+    </table>
+    <table name="person" schema="" catalog="test" type="TABLE">
+      <column name="id" sqlType="int unsigned" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="varchar" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="roles" schema="" catalog="test" type="TABLE">
+      <column name="name" sqlType="varchar" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="role_name" sqlType="varchar" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="name"/>
+    </table>
+    <table name="user" schema="" catalog="test" type="TABLE">
+      <column name="id" sqlType="int unsigned" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="firstName" sqlType="varchar" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="lastName" sqlType="varchar" precision="45" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="users" schema="" catalog="test" type="TABLE">
+      <column name="name" sqlType="varchar" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="password" sqlType="varchar" precision="32" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="name"/>
+    </table>
+  </data-source>
+</component>
